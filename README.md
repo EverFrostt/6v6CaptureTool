@@ -61,9 +61,7 @@ powershell -ExecutionPolicy Bypass -File build.ps1
 This installs the pinned Pillow and PyInstaller versions
 (`requirements-build.txt`) if needed, and writes
 `dist\OWScoreboardCapture.exe` (build outputs are git-ignored). Close
-the app first if it's running: Windows locks the old exe. Attach the file to a
-GitHub release, with its SHA-256 (`Get-FileHash dist\OWScoreboardCapture.exe`)
-so people can check they got the same file. UPX compression is turned off
+the app first if it's running: Windows locks the old exe. UPX compression is turned off
 (`--noupx`), because it's a common cause of antivirus false positives.
 
 Design notes:
